@@ -181,6 +181,7 @@ export function RecipeFinder() {
 
         <button
           type="submit"
+          disabled={ingredients.length === 0}
           className="flex w-full items-center justify-center gap-2 rounded-xl bg-primary px-5 py-3.5 font-heading text-base font-bold text-primary-foreground shadow-sm transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
         >
           <Search className="size-5" />
